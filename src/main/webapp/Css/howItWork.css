@@ -1,0 +1,44 @@
+@charset "UTF-8";
+#cardDiv{
+	margin-top: 30px;
+}
+.howItWorkDiv {
+	padding-top:5px;
+  display: inline-flex;
+  width: 1200px;
+  height: 150px;
+}
+.chiImg {
+  width: 100px;
+  height: 200px;
+}
+.chiImg img {
+  width: 100px;
+  height: 100px;
+  padding-top: 20px;
+  scale: 0.8;
+}
+.chiText {
+  width: 200px;
+  height: 150px;
+  margin-left: 5px;
+  margin-right: 5px;
+  line-height: 104%;
+  
+  
+}
+.cardHowItWork {
+  display: inline-flex;
+  width:100vw;
+  text-align: left !important;
+}
+.chiH4 {
+  margin-left: 13px;
+  font-size: 1.2rem !important;
+}
+.chiP {
+  padding: 10px;
+margin-top: 16px;
+  position: relative;
+  bottom: 20px;
+}

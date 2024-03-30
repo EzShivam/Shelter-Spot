@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #9290c3;
+    color: #0E1C36;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: row; */
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(43deg, rgba(0, 217, 91, 0.1) 0%, rgba(97, 92, 246, 0.1) 53.65%, rgba(255, 255, 255, 0.1) 100%), #fff;
+    
+}
+
+.registration-container {
+<<<<<<< HEAD
+    background: radial-gradient(28.68% 28.68% at 50% 19.21%, #FFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(315deg, rgba(225, 239, 254, 0.8) 0%, rgba(213, 245, 246, 0.8) 0.01%, rgba(237, 250, 250, 0.8) 100%);
+=======
+   
+>>>>>>> dbeb1b2f265e4efa6e959a0b4a78b4796fb70a23
+    border: 1px solid #3498db;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+.registration-form {
+    color: radial-gradient(28.68% 28.68% at 50% 19.21%, #FFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(315deg, rgba(225, 239, 254, 0.8) 0%, rgba(213, 245, 246, 0.8) 0.01%, rgba(237, 250, 250, 0.8) 100%);
+    width: 700px;
+    height: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3 {
+    color: #101820;
+}
+
+label {
+    display: flex;
+    margin-top: 10px;
+    color: #101820;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #070F2B;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+}
+
+button:hover {
+    background-color: #374163;
+    /* opacity: 0.5; */
+}
+
+.login-link {
+    color: #101820;
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    color: rgb(5, 5, 142);
+}
+
+.leftColumn {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightColumn {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainInputContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.regFoot {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.activeRegister{
+	border-bottom: solid 3px #fff;
+    padding-bottom: 10px;
+}

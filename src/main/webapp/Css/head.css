@@ -1,0 +1,56 @@
+@charset "UTF-8";
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(43deg, rgba(0, 217, 91, 0.1) 0%, rgba(97, 92, 246, 0.1) 53.65%, rgba(255, 255, 255, 0.1) 100%), #fff;
+}
+
+
+
+.topnav {
+   overflow: hidden;
+   width: 100vw;
+ background-color: #44b09e;
+background-image: linear-gradient(315deg, #44b09e 0%, #e0d2c7 74%);  
+   color: black;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   text-align:center;
+   position: fixed;
+   top: 0;
+    
+    
+}
+
+.topnav a {
+   padding: 6px 18px!important;
+    color: black;
+    font-weight: 450;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+   
+}
+
+.topnav a:hover {
+    color: rgba(255,255,255,.75);
+}
+.user-login-det{
+	width:200px;
+	height:50px;
+	position: absolute;
+	right: 50px;
+	display: flex;
+	align-items: center;
+    top:0px;
+}
+
+#usericon{
+	padding-right: 10px;
+}
+
+
+

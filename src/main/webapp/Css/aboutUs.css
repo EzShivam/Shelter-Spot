@@ -1,0 +1,157 @@
+@charset "UTF-8";
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(43deg, rgba(0, 217, 91, 0.1) 0%, rgba(97, 92, 246, 0.1) 53.65%, rgba(255, 255, 255, 0.1) 100%), #fff;
+}
+
+.about-section {
+    padding: 20px;
+    margin-bottom: 20px;
+    /* display: flex; */
+}
+
+h2 {
+    color: #3498db;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.left-line {
+    border: 1px solid black;
+    width: 35%;
+    position: relative;
+    margin-left: 0;
+}
+
+.left-rnd {
+    height: 20px;
+    width: 20px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.right-rnd {
+    height: 20px;
+    width: 20px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.right-line {
+    border: 1px solid black;
+    width: 40%;
+    right: 0;
+}
+
+.heading-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-div-of-whyToChooseUs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.content-fs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+}
+
+.vid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.rating {
+    display: flex;
+    height: 40px;
+    width: 80px;
+}
+
+.ratImg {
+    height: 40px;
+    width: 75px;
+}
+
+.customer-reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.rev {
+    height: auto;
+    width: fit-content;
+
+}
+
+.rev-text {
+    height: auto;
+    width: 290px;
+    justify-content: center;
+}
+
+.main-future-scope {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.first-scope {
+    height: auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center
+}
+
+.second-scope {
+    height: auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center
+}
+
+.third-scope {
+    height: auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center
+}
+
+.activeAboutUs{
+	border-bottom: solid 3px #fff;
+    padding-bottom: 10px;
+}
+
+.footInclude {
+
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
