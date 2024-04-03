@@ -23,6 +23,7 @@ import rentalroomorservicefinder.dto.Users;
 public class UserLoginControllerServelt extends HttpServlet {
 	public static boolean loggedIn= false;
 	public static String loginusername=null;
+	public static long phno=1l;
 	private static final long serialVersionUID = 1L;
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -34,7 +35,7 @@ public class UserLoginControllerServelt extends HttpServlet {
 		    Users user = userDao.loginStudent(email);
 		    if (user != null) {
 		        if (user.getEmail().equals(email) && user.getPassword().equals(password)) {
-		           
+		            phno=user.getPhno();
 		        	HttpSession session=req.getSession();
 		        	session.setAttribute("loggedInUser", user);
 		            Cookie cookie = new Cookie("username", user.getFirstnName());

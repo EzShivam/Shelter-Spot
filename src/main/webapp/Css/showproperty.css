@@ -1,0 +1,51 @@
+/* CSS for table */
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-top: 20px;
+    
+}
+
+/* CSS for table header */
+table th {
+    background-color: #f2f2f2;
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* CSS for table data */
+table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+/* CSS for alternate row background */
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* CSS for table header row */
+table thead tr {
+    background-color: #333;
+    color: #fff;
+}
+
+/* CSS for table heading text */
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color:black;
+}
+
+/* CSS for no property message */
+.no-property {
+    margin-top: 20px;
+    color: red;
+}
