@@ -13,6 +13,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import rentalroomorservicefinder.dao.UsersDao;
 import rentalroomorservicefinder.dto.Users;
@@ -22,6 +23,7 @@ import rentalroomorservicefinder.dto.Users;
 public class ViewNumberLoginControllerServlet extends HttpServlet {
 	public static boolean loggedIn= false;
 	public static String loginusername=null;
+	public static boolean view_user_login=false;
 	private static final long serialVersionUID = 1L;
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -32,9 +34,12 @@ public class ViewNumberLoginControllerServlet extends HttpServlet {
 		
 		try {
 		    UsersDao userDao = new UsersDao();
-		    Users user = userDao.loginStudent(email);
+		    Users user = userDao.loginUser(email);
 		    if (user != null) {
 		        if (user.getEmail().equals(email) && user.getPassword().equals(password)) {
+		        	view_user_login=true;
+		        	HttpSession session=req.getSession();
+		        	session.setAttribute("loggedInUser", user);
 		        	Cookie cookie = new Cookie("username", user.getFirstnName());
 		            cookie.setMaxAge(3600); 
 		            resp.addCookie(cookie);

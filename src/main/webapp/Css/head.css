@@ -1,7 +1,9 @@
 @charset "UTF-8";
 body {
-    font-family: 'Arial', sans-serif;
+	box-sizing: border-box;
+    overflow-x:hidden;
     margin: 0;
+    font-family: 'Arial', sans-serif;
     padding: 0;
     background: linear-gradient(43deg, rgba(0, 217, 91, 0.1) 0%, rgba(97, 92, 246, 0.1) 53.65%, rgba(255, 255, 255, 0.1) 100%), #fff;
 }
@@ -40,17 +42,30 @@ background-image: linear-gradient(315deg, #44b09e 0%, #e0d2c7 74%);
 }
 .user-login-det{
 	width:200px;
-	height:50px;
+	height:40px;
 	position: absolute;
 	right: 50px;
 	display: flex;
 	align-items: center;
+	justify-content:center;	
     top:0px;
+   
 }
 
 #usericon{
 	padding-right: 10px;
 }
 
+.adminimg{
+	width: 30px !important;
+	padding-right:10px;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+.inlineadminuser{
+	display: inline-block;
+}
 
-
+#topNavBar{
+	line-height: 1.5 !important;
+}

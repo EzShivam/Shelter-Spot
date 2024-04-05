@@ -12,7 +12,7 @@
 	<div class="footDiv">
 			<div class="coppyright" style="text-align: left !important;">
 					<div class="container" valign="center">
-					Copyrights © 2024. All Rights Reserved | <b>ShelterSpot.in</b> | This Web-site is managed by <b><a href="https://www.dynamichost.biz">s host</a></b>
+					Copyrights © 2024. All Rights Reserved | <b>ShelterSpot.in</b> | This Web-site is managed by <b><a href="#host">s host</a></b>
 					</div>
 			</div>
 	</div>

@@ -1,3 +1,5 @@
+<%@page import="rentalroomorservicefinder.servlet.AdminLoginControllerServlet"%>
+<%@page import="rentalroomorservicefinder.servlet.ViewNumberLoginControllerServlet"%>
 <%@page import="rentalroomorservicefinder.servlet.UserLogoutControllerServlet"%>
 <%@page import="rentalroomorservicefinder.servlet.UserLoginControllerServelt"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -31,7 +33,14 @@
   <a class="activeAboutUs"href="aboutUs.jsp">ABOUT US</a>
   <a class="activeRegister" href="register.jsp">LOGIN/REGISTER</a>
   <div class="user-login-det"><% if(username!=null){ %>
-  		<a class="usernamehref" href="userdetails.jsp"><i id="usericon" class="fa fa-solid fa-user"></i><%=username %></a>
+  <%if (UserLoginControllerServelt.this_is_user || ViewNumberLoginControllerServlet.view_user_login) {%>
+    		<a class="usernamehref" href="userdetails.jsp"><i id="usericon" class="fa fa-solid fa-user"></i> <i class="active-username"><%=username %></i> </a>
+ 
+  <%}if(AdminLoginControllerServlet.this_is_admin){ %>
+  
+  		  		<a class="usernamehref" href="adminhome.jsp"> <img id="adminlogo" class="adminimg" src="images/logo/adminLogoWithLap.png" alt=""/> <i class="active-username"><%=username %></i> </a>
+  		
+  <%} %>
   <%} %></div>
 </div>
 

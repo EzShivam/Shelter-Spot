@@ -6,15 +6,12 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="Css/login.css">
-<link href="Css/head2.css" rel="stylesheet" type="text/css">
-	<link href="Css/head.css" rel="stylesheet" type="text/css">
-	<link href="Css/adminnameview.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <jsp:include page="/head.jsp"></jsp:include>
-    <form action="login" method="post">
+    <form action="adminlogin" method="post">
         <div class="form-container">
-  <h2>Login for New Home</h2>
+  <h2>Login As Admin </h2>
 <% String msg=(String)request.getAttribute("message"); %>
   
   <% if(msg!=null){ %>
@@ -26,12 +23,13 @@
   <label for="password">Password:</label>
   <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
-  <button onclick="refreshPage()" type="submit">Login</button>
+  <button type="submit">Login</button>
 
   <div class="register-link">
-    <p>If you are new, <a href="register.jsp">register here</a>.</p>
-    <p>If you are admin login here, <a href="admin_login.jsp">login here</a>.</p>
-  </div>
+    <!-- <p>If you are new, <a href="admin_reg.jsp">register here</a>.</p>
+  --><p>If you are user, <a href="login.jsp">login here</a>.</p>
+ 
+   </div>
 </div>
         
 	</form>

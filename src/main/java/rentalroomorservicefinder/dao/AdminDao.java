@@ -1,7 +1,5 @@
 package rentalroomorservicefinder.dao;
 
-
-
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -11,52 +9,51 @@ import javax.persistence.NoResultException;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
-import rentalroomorservicefinder.dto.Users;
+import rentalroomorservicefinder.dto.Admin;
 
-
-public class UsersDao {
+public class AdminDao {
 	public EntityManager getEntityManager() {
 		EntityManagerFactory entityManagerFactory=Persistence.createEntityManagerFactory("shivam");
 		EntityManager entityManager=entityManagerFactory.createEntityManager();
 		return entityManager;
 	}
 	
-	public Users saveUsers(Users student) {
+	public Admin saveAdmin(Admin admin) {
 		EntityManager entityManager=getEntityManager();
 		EntityTransaction entityTransaction=entityManager.getTransaction();
 		
 		entityTransaction.begin();
-		entityManager.persist(student);
+		entityManager.persist(admin);
 		entityTransaction.commit();
-		return student;
+		return admin;
 	}
-	public Users loginUser(String email) {
+	public Admin loginAdmin(String email) {
 		try {
 			EntityManager entityManager=getEntityManager();
-			Query query=entityManager.createQuery("select s from Users s where s.email=?1");
+			Query query=entityManager.createQuery("select a from Admin a where a.email=?1");
 			query.setParameter(1, email);
-			Users user=(Users) query.getSingleResult();
+			Admin dbadmin=(Admin) query.getSingleResult();
 			
-			return user;
+			return dbadmin;
 		} catch (NoResultException nre) {
 			return null;
 		}
 	}
-	public Users updateUser(Users student) {
+	public Admin updateAdmin(Admin admin) {
 		EntityManager entityManager=getEntityManager();
 		EntityTransaction entityTransaction=entityManager.getTransaction();
 		entityTransaction.begin();
-		entityManager.merge(student);
+		entityManager.merge(admin);
 		entityTransaction.commit();
-		return student;
+		return admin;
 	}
 	public boolean deleteUser(int id) {
 		EntityManager entityManager=getEntityManager();
 		EntityTransaction entityTransaction=entityManager.getTransaction();
-		Users student=entityManager.find(Users.class, id);
-		if(student!=null) {
+		Admin admin=entityManager.find(Admin.class, id);
+		if(admin!=null) {
 			entityTransaction.begin();
-			entityManager.remove(student);
+			entityManager.remove(admin);
 			entityTransaction.commit();
 			return true;
 		}
@@ -65,16 +62,16 @@ public class UsersDao {
 		}
 		
 	}
-	public Users getUserById(int id) {
+	public Admin getUserById(int id) {
 		EntityManager entityManager=getEntityManager();
-		Users student=entityManager.find(Users.class, id);
-		return student;
+		Admin admin=entityManager.find(Admin.class, id);
+		return admin;
 	}
 	
-	public List<Users> getAllUsers(){
+	public List<Admin> getAllAdmins(){
 		EntityManager entityManager=getEntityManager();
-		Query query=entityManager.createQuery("select a from Users a");
-		List<Users> list=query.getResultList();
+		Query query=entityManager.createQuery("select a from Admin a");
+		List<Admin> list=query.getResultList();
 		return list;
 	}
 

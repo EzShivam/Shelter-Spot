@@ -153,3 +153,6 @@ body {
 	left: 0;
 	right: 0;
 }
+body{
+	line-height: 1.5 !important;
+}

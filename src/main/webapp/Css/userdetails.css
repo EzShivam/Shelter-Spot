@@ -51,4 +51,8 @@
         right:0;
         
         }
+        .active-username{
+		border-bottom: solid 3px #fff;
+	    padding-bottom: 5px;
+		}
         

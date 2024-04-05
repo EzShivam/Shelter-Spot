@@ -81,3 +81,7 @@ body {
 .errorMsg{
 	text-align: center;
 }
+.activeRegister{
+	border-bottom: solid 3px #fff;
+    padding-bottom: 10px;
+}

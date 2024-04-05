@@ -1,7 +1,5 @@
 package rentalroomorservicefinder.servlet;
 
-
-
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -11,8 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet("/logout")
-public class UserLogoutControllerServlet extends HttpServlet{
+@WebServlet("/adminlogout")
+public class AdminLogoutServletController extends HttpServlet{
 	/**
 	 * 
 	 */
@@ -27,10 +25,10 @@ public class UserLogoutControllerServlet extends HttpServlet{
 	       
 	    }
 	    
-	    UserLoginControllerServelt.this_is_user=false;
+	    AdminLoginControllerServlet.this_is_admin=false;
 	    // Redirect the user back to the login page or any other appropriate page
 	    req.setAttribute("message", "Successfully Logout!");
-	    req.getRequestDispatcher("login.jsp").forward(req, resp);
+	    req.getRequestDispatcher("admin_login.jsp").forward(req, resp);
 
 	}
 }

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.admindetails {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  width: 1300px;
+  align-self: center;
+  height: fit-content;
+  padding: 20px;
+  background-color: aqua;
+}
+.maincont{
+	margin-top: 85px;
+}
+.adminimg {
+  width: 25px;
+  height: 25px;
+}
+.adminname {
+  width: 200px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font: 1em sans-serif;
+}
+.heading-cont {
+  display: flex;
+  flex-direction: column;
+}
+.welcomemsg {
+  align-self: center;
+  font: 2em sans-serif;
+}
+.user-detailstable {
+  margin-top:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#dbtable {
+  min-width: 500px;
+  width: 800px;
+  height: fit-content;
+  border: 1px solid red;
+}
+.active-username{
+		border-bottom: solid 3px #fff;
+	    padding-bottom: 5px;
+}

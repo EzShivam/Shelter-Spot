@@ -36,7 +36,7 @@ public class UserRegisterDetailsControllerServlet extends HttpServlet {
 		login.setcnfpassword(cnfpassword);
 				
 		UsersDao loginPageDao=new UsersDao();
-		Users dbuser=loginPageDao.saveStudent(login);
+		Users dbuser=loginPageDao.saveUsers(login);
 		
 		if(dbuser!=null) {
 			req.setAttribute("message", "signup succesfully");
