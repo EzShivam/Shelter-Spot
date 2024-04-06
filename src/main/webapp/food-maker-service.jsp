@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<jsp:include page="/head.jsp"></jsp:include>
     <!-- <div class="mainDiv"> -->
     <a href="#" class="card">
         <img src="images/services/food-maker.png" alt="Employee 1 Photo">
@@ -67,7 +68,9 @@
         <p><b>Payable:</b> $50,000</p>
     </a>
     <!-- </div> -->
-
+<div class="footInclude">
+		<jsp:include page="/foot.jsp"></jsp:include>
+	</div>
 
 </body>
 

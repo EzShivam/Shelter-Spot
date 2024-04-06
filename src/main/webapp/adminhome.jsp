@@ -66,8 +66,11 @@
               <th scope="col">First Name</th>
               <th scope="col">Last Name</th>
               <th scope="col">Email</th>
+              <th scope="col">Phone No</th>
               <th scope="col">Password</th>
               <th scope="col">Confirm Passoword</th>
+              <th scope="col">View Property</th>
+              <th scope="col">View Property Images</th>
               <th scope="col">Update User</th>
               <th scope="col">Remove User</th>
             </tr>
@@ -79,9 +82,12 @@
               <td><%=users.getFirstnName()%></td>
               <td><%=users.getLastName() %></td>
               <td><%=users.getEmail() %></td>
+              <td><%=users.getPhno() %></td>
               <td><%=users.getPassword() %></td>
               <td><%=users.getcnfpassword() %></td>
               
+              <td><a href="viewpropertybyadmin?phno=<%=users.getPhno()%>">View Property</a></td>
+              <td><a href="viewpropertyimagesbyadmin?phno=<%=users.getPhno()%>">View Property Images</a></td>
               <td><a href="delete?id=<%=users.getId()%>">Delete</a></td>
               <td><a href="edit?id=<%=users.getId()%>">Update</a></td>
             </tr>

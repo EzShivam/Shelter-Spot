@@ -9,6 +9,7 @@
      <link rel="stylesheet" href="Css/showimages.css">
 </head>
 <body>
+<jsp:include page="/head.jsp"></jsp:include>
 	<% String msg=(String)request.getAttribute("message"); %>
     <% if(msg!=null){ %>
   		<h2><%=msg %></h2>
@@ -17,5 +18,8 @@
 
     <%@ include file="showproperty.jsp" %>
     <%@ include file="showimages.jsp" %>
+    <div class="footInclude">
+<jsp:include page="/foot.jsp"></jsp:include>
+</div>
 </body>
 </html>

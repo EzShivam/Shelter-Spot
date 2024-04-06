@@ -36,13 +36,9 @@ public class PropertyDAO {
     }
     public List<Property> getAllProperties() {
     	EntityManager entityManager = entityManagerFactory.createEntityManager();
-        // JPQL query to fetch all properties
-        String jpql = "SELECT p FROM Property p";
-
-        // Create and execute the query
-        TypedQuery<Property> query = entityManager.createQuery(jpql, Property.class);
-        List<Property> properties = query.getResultList();
-
+		Query query=entityManager.createQuery("select a from Property a");
+		List<Property> properties=query.getResultList();
+		
         return properties;
     }
     

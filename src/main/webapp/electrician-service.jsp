@@ -12,6 +12,7 @@
 
 <body>
     <!-- <div class="mainDiv"> -->
+    <jsp:include page="/head.jsp"></jsp:include>
     <a href="#" class="card">
         <img src="images/services/electrician.png" alt="Employee 1 Photo">
         <h3>Hi! I'm a plumber</h3>
@@ -68,7 +69,9 @@
     </a>
     <!-- </div> -->
 
-
+<div class="footInclude">
+		<jsp:include page="/foot.jsp"></jsp:include>
+	</div>
 </body>
 
 </html>

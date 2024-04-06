@@ -115,8 +115,9 @@
 
         </section>
     </div>
-
-<jsp:include page="/foot.jsp"></jsp:include>
+<div class="footInclude">
+		<jsp:include page="/foot.jsp"></jsp:include>
+	</div>
     
 </body>
 
