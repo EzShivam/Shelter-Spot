@@ -156,3 +156,6 @@ body {
 body{
 	line-height: 1.5 !important;
 }
+.activeoneroom{
+	border-bottom:2px solid blue;
+}

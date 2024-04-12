@@ -19,7 +19,7 @@
     <%@ include file="showproperty.jsp" %>
     <%@ include file="showimages.jsp" %>
     <div class="footInclude">
-<jsp:include page="/foot.jsp"></jsp:include>
-</div>
+		<jsp:include page="/foot.jsp"></jsp:include>
+	</div>
 </body>
 </html>

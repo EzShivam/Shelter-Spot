@@ -13,9 +13,10 @@
 <body>
 <jsp:include page="/head.jsp"></jsp:include>
     <!-- <div class="mainDiv"> -->
+    <div class="card-div">
     <a href="#" class="card">
         <img src="images/services/water-supplier.png" alt="Employee 1 Photo">
-        <h3>Hi! I'm a plumber</h3>
+        <h3>Hi! I'm a water-supplier</h3>
         <p><b>Name:</b> John Doe</p>
         <p><b>Experience:</b> 5 years</p>
         <p><b>Contact:</b> 123-456-7890</p>
@@ -24,7 +25,7 @@
     </a>
     <a href="#" class="card">
         <img src="images/services/water-supplier.png" alt="Employee 1 Photo">
-        <h3> Hi! I'm a plumber</h3>
+        <h3> Hi! I'm a water-supplier</h3>
         <p><b>Name:</b> John Doe</p>
         <p><b>Experience:</b> 5 years</p>
         <p><b>Contact:</b> 123-456-7890</p>
@@ -33,7 +34,7 @@
     </a>
     <a href="#" class="card">
         <img src="images/services/water-supplier.png" alt="Employee 1 Photo">
-        <h3>Hi! I'm a plumber</h3>
+        <h3>Hi! I'm a water-supplier</h3>
         <p><b>Name:</b> John Doe</p>
         <p><b>Experience:</b> 5 years</p>
         <p><b>Contact:</b> 123-456-7890</p>
@@ -42,7 +43,7 @@
     </a>
     <a href="#" class="card">
         <img src="images/services/water-supplier.png" alt="Employee 1 Photo">
-        <h3>Hi! I'm a plumber</h3>
+        <h3>Hi! I'm a water-supplier</h3>
         <p><b>Name:</b> John Doe</p>
         <p><b>Experience:</b> 5 years</p>
         <p><b>Contact:</b> 123-456-7890</p>
@@ -51,7 +52,7 @@
     </a>
     <a href="#" class="card">
         <img src="images/services/water-supplier.png" alt="Employee 1 Photo">
-        <h3>Hi! I'm a plumber</h3>
+        <h3>Hi! I'm a water-supplier</h3>
         <p><b>Name:</b> Jos Buttler</p>
         <p><b>Experience:</b> 3 years</p>
         <p><b>Contact:</b> 123-456-7890</p>
@@ -60,13 +61,14 @@
     </a>
     <a href="#" class="card">
         <img src="images/services/water-supplier.png" alt="Employee 1 Photo">
-        <h3>Hi! I'm a plumber</h3>
+        <h3>Hi! I'm a water-supplier</h3>
         <p><b>Name:</b> John Doe</p>
         <p><b>Experience:</b> 5 years</p>
         <p><b>Contact:</b> 123-456-7890</p>
         <p><b>Address:</b> 123 Main St</p>
         <p><b>Payable:</b> $50,000</p>
     </a>
+    </div>
     <!-- </div> -->
 <div class="footInclude">
 <jsp:include page="/foot.jsp"></jsp:include>

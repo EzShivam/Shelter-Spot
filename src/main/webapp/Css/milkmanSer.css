@@ -11,16 +11,29 @@ body {
     padding-top: 30px;
     /* padding-bottom: 30px; */
     margin: 0;
-    background-color: #9290c3;
+    background: linear-gradient(43deg, rgba(0, 217, 91, 0.1) 0%, rgba(97, 92, 246, 0.1) 53.65%, rgba(255, 255, 255, 0.1) 100%), #fff;
+    
     margin-left: 50px;
     padding-bottom: 270px;
+}
+
+.card-div{
+	margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100vw;
 }
 
 .card {
     height: fit-content;
     width: 300px;
-    background: linear-gradient(to right, #224970, #496c8e);
-    border-radius: 8px;
+    margin-left:50px;
+    background: radial-gradient(28.68% 28.68% at 50% 19.21%, #FFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(315deg, rgba(225, 239, 254, 0.8) 0%, rgba(213, 245, 246, 0.8) 0.01%, rgba(237, 250, 250, 0.8) 100%);
+    
+     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
@@ -52,4 +65,12 @@ img {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
+}
+
+.footInclude{
+	
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:-240px;
 }
