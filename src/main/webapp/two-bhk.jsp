@@ -1,10 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<html>
+<head>
+ <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="Css/room.css" />
@@ -33,18 +32,18 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-  </head>
-  <body>
-  <div class="headRoom">
+</head>
+<body>
+<div class="headRoom">
   <jsp:include page="/head.jsp"></jsp:include>
   </div>
-    <div class="cotentRoom">
+  <div class="cotentRoom">
     	<div class="topBox">
       <div id="categBox">
         <ul>
           <li class="categBoxLi" id="head_cat">Room/House Category</li>
           <li class="categBoxLi">
-            <a class="linkTagCat activeoneroom" href="room.jsp">> 1 Room</a>
+            <a class="linkTagCat" href="room.jsp">> 1 Room</a>
           </li>
           <li class="categBoxLi">
             <a class="linkTagCat" href="two-room.jsp">> 2 Room</a>
@@ -53,10 +52,10 @@
             <a class="linkTagCat" href="one-rk-rooms.jsp">> 1 Rk</a>
           </li>
           <li class="categBoxLi">
-            <a class="linkTagCat" href="one-bhk.jsp"> > 1Bhk</a>
+            <a class="linkTagCat" href="one-bhk.jsp">> 1 Bhk</a>
           </li>
           <li class="categBoxLi">
-            <a class="linkTagCat" href="two-bhk.jsp">> 2 Bhk</a>
+            <a class="linkTagCat activetwobhk" href="two-bhk.jsp">> 2 Bhk</a>
           </li>
         </ul>
       </div>
@@ -129,23 +128,23 @@
       </div>
       <div class="contentDiv">
         <div class="cdiv1">
-          <h3 class="addresstxt">Lakshmi Narayan Nagar</h3>
-          <p class="proptypetxt">1 Room in Lakasmi narayan nagar</p>
+          <h3 class="addresstxt">Kaveri Hieghts</h3>
+          <p class="proptypetxt">2 BHK flats at kaveri heights</p>
         </div>
         <div class="cDivp">
           <p class="txtprice">price--</p>
-          <p class="price">1500rs</p>
+          <p class="price">5000000rs</p>
         </div>
         <div class="cDivNear">
           <b class="txtNearby">Nearby :</b>
-          <p class="nearP1">Bk Road</p>
-          <p class="nearP2">Airport</p>
+          <p class="nearP1">Anand Nagar</p>
+          <p class="nearP2">Raj Mall</p>
         </div>
         <div><p>Looking for dream home?</p></div>
         <div class="wonerDet">
           <div class="wonersubdiv">
             <h5 class="txtWoner">Woner</h5>
-            <p class="wonerName">Ganraj Associates</p>
+            <p class="wonerName">Ganesh Developers</p>
           </div>
     	  <div class="btnViewNumber"><a href="viewContactDetails">View Number</a></div>
         </div>
@@ -218,23 +217,23 @@
       </div>
       <div class="contentDiv">
         <div class="cdiv1">
-          <h3 class="addresstxt">Choudhary Rooms</h3>
-          <p class="proptypetxt">1 Room in Choudhary rooms</p>
+          <h3 class="addresstxt">Divyansh Apartments</h3>
+          <p class="proptypetxt">2 BHK Flats at Divyansh Apartments</p>
         </div>
         <div class="cDivp">
           <p class="txtprice">price--</p>
-          <p class="price">1500rs</p>
+          <p class="price">1000000rs</p>
         </div>
         <div class="cDivNear">
           <b class="txtNearby">Nearby :</b>
-          <p class="nearP1">Baba Nagar</p>
-          <p class="nearP2">Mahatma Phule Highschool</p>
+          <p class="nearP1">Jaya Hyundai Showroom</p>
+          <p class="nearP2">Mondha Road</p>
         </div>
         <div><p>Looking for dream home?</p></div>
         <div class="wonerDet">
           <div class="wonersubdiv">
             <h5 class="txtWoner">Woner</h5>
-            <p class="wonerName">Shinde Associates</p>
+            <p class="wonerName">Jaya Sharma</p>
           </div>
     	  <div class="btnViewNumber"><a href="viewContactDetails">View Number</a></div>
         </div>
@@ -307,23 +306,23 @@
       </div>
       <div class="contentDiv">
         <div class="cdiv1">
-          <h3 class="addresstxt">Samarth Colony</h3>
-          <p class="proptypetxt">1 Room in Samarth Colony </p>
+          <h3 class="addresstxt">Raj Apartments G</h3>
+          <p class="proptypetxt">2 BHK Flats at raj apartments G </p>
         </div>
         <div class="cDivp">
           <p class="txtprice">price--</p>
-          <p class="price">1800rs</p>
+          <p class="price">1500000rs</p>
         </div>
         <div class="cDivNear">
           <b class="txtNearby">Nearby :</b>
-          <p class="nearP1">Shree Swami Samarth Mandir</p>
-          <p class="nearP2">Anand Nagar</p>
+          <p class="nearP1">P N High School</p>
+          <p class="nearP2">Kailash Nagar</p>
         </div>
         <div><p>Looking for dream home?</p></div>
         <div class="wonerDet">
           <div class="wonersubdiv">
             <h5 class="txtWoner">Woner</h5>
-            <p class="wonerName">Patil Associates</p>
+            <p class="wonerName">Biyani Developers</p>
           </div>
     	  <div class="btnViewNumber"><a href="viewContactDetails">View Number</a></div>
         </div>
@@ -396,23 +395,23 @@
       </div>
       <div class="contentDiv">
         <div class="cdiv1">
-          <h3 class="addresstxt">Gajanan Niwas</h3>
-          <p class="proptypetxt">1 Room in Gajanan niwas</p>
+          <h3 class="addresstxt">Sharda Apartments</h3>
+          <p class="proptypetxt">2 BHK flats at Sharda Apartments</p>
         </div>
         <div class="cDivp">
           <p class="txtprice">price--</p>
-          <p class="price">1500rs</p>
+          <p class="price">1000000rs</p>
         </div>
         <div class="cDivNear">
           <b class="txtNearby">Nearby :</b>
-          <p class="nearP1">Malegaon Road</p>
-          <p class="nearP2">Sarpanch Nagar</p>
+          <p class="nearP1">Vidyut Nagar</p>
+          <p class="nearP2">Natural Ice-Creams</p>
         </div>
         <div><p>Looking for dream home?</p></div>
         <div class="wonerDet">
           <div class="wonersubdiv">
             <h5 class="txtWoner">Woner</h5>
-            <p class="wonerName">Kadam Associates</p>
+            <p class="wonerName">Sharda Constructions</p>
           </div>
     	  <div class="btnViewNumber"><a href="viewContactDetails">View Number</a></div>
         </div>
@@ -485,23 +484,23 @@
       </div>
       <div class="contentDiv">
         <div class="cdiv1">
-          <h3 class="addresstxt">Kalyankar Plaza</h3>
-          <p class="proptypetxt">1 Room in Kalyankar plaza</p>
+          <h3 class="addresstxt">Sai-shraddha Buildings</h3>
+          <p class="proptypetxt">2 BHK flats at sai-shraddha buildibgs</p>
         </div>
         <div class="cDivp">
           <p class="txtprice">price--</p>
-          <p class="price">1500rs</p>
+          <p class="price">6500000</p>
         </div>
         <div class="cDivNear">
           <b class="txtNearby">Nearby :</b>
-          <p class="nearP1">Pawde Wadi Bk.</p>
-          <p class="nearP2">Purna Road</p>
+          <p class="nearP1">Vajirabad</p>
+          <p class="nearP2">Old Shiva Temple</p>
         </div>
         <div><p>Looking for dream home?</p></div>
         <div class="wonerDet">
           <div class="wonersubdiv">
             <h5 class="txtWoner">Woner</h5>
-            <p class="wonerName">Madanwad Creators</p>
+            <p class="wonerName">Mahadev Associates</p>
           </div>
     	  <div class="btnViewNumber"><a href="viewContactDetails">View Number</a></div>
         </div>
@@ -574,23 +573,23 @@
       </div>
       <div class="contentDiv">
         <div class="cdiv1">
-          <h3 class="addresstxt">Vinayak Housing firm</h3>
-          <p class="proptypetxt">1 Room in Vonayak Housing Firm</p>
+          <h3 class="addresstxt">Khalsa Plaza</h3>
+          <p class="proptypetxt">2 BHK flats at khalsa plaza</p>
         </div>
         <div class="cDivp">
           <p class="txtprice">price--</p>
-          <p class="price">1500rs</p>
+          <p class="price">1500000rs</p>
         </div>
         <div class="cDivNear">
           <b class="txtNearby">Nearby :</b>
-          <p class="nearP1">Mor Chouk</p>
-          <p class="nearP2">Gnx Fitness Club</p>
+          <p class="nearP1">Gurudwara Chauk</p>
+          <p class="nearP2">Billa da Dhaba</p>
         </div>
         <div><p>Looking for dream home?</p></div>
         <div class="wonerDet">
           <div class="wonersubdiv">
             <h5 class="txtWoner">Woner</h5>
-            <p class="wonerName">Ingle Associates</p>
+            <p class="wonerName">Charansingh Associates</p>
           </div>
     	  <div class="btnViewNumber"><a href="viewContactDetails">View Number</a></div>
         </div>
@@ -600,5 +599,7 @@
     
     </div>
     <div class="footRoom"><jsp:include page="/foot.jsp"></jsp:include></div>
-  </body>
+ 
+
+</body>
 </html>

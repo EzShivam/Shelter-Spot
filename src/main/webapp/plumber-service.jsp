@@ -13,6 +13,8 @@
 <body>
     <!-- <div class="mainDiv"> -->
     <jsp:include page="/head.jsp"></jsp:include>
+    
+    <div class="card-div">
     <a href="#" class="card">
         <img src="images/services/plumber.png" alt="Employee 1 Photo">
         <h3>Hi! I'm a plumber</h3>
@@ -67,6 +69,7 @@
         <p><b>Address:</b> 123 Main St</p>
         <p><b>Payable:</b> $50,000</p>
     </a>
+    </div>
     <!-- </div> -->
 
 <div class="footInclude">

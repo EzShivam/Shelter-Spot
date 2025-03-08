@@ -26,11 +26,11 @@
 			<div id="categBox">
 				<ul>
 					<li class="categBoxLi" id="head_cat"> Room/House Category</li>
-					<li class="categBoxLi"><a class="linkTagCat" href="#room">> 1 Room</a></li>
-					<li class="categBoxLi"><a class="linkTagCat" href="#room">> 2 Room</a></li>
-					<li class="categBoxLi"><a class="linkTagCat" href="#room">> 1 Rk</a></li>
-					<li class="categBoxLi"><a class="linkTagCat" href="#room">> 1 Bhk</a></li>
-					<li class="categBoxLi"><a class="linkTagCat" href="#room">> 2 Bhk</a></li>
+					<li class="categBoxLi"><a class="linkTagCat" href="room.jsp">> 1 Room</a></li>
+					<li class="categBoxLi"><a class="linkTagCat" href="two-room.jsp">> 2 Room</a></li>
+					<li class="categBoxLi"><a class="linkTagCat" href="one-rk-rooms.jsp">> 1 Rk</a></li>
+					<li class="categBoxLi"><a class="linkTagCat" href="one-bhk.jsp">> 1 Bhk</a></li>
+					<li class="categBoxLi"><a class="linkTagCat" href="two-bhk.jsp">> 2 Bhk</a></li>
 				</ul>
 			
 			</div>
